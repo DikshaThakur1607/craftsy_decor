@@ -5,6 +5,12 @@ header {
   align-items: center;
 }
 
+.logo img {
+  height: 80px;      /* adjust as needed */
+  width: auto;       /* keeps aspect ratio */
+  max-width: 200px;  /* prevents it from growing too wide */
+}
+
 .logo {
   margin-bottom: 0.5rem;
 }
@@ -41,4 +47,5 @@ header {
     margin: 0.5rem 0;
   }
 }
+
 
