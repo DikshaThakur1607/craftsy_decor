@@ -25,6 +25,7 @@ header {
   height: 50px;
   width: auto;
   border-radius: 6px;
+  align-items: center;
 }
 
 .logo-text {
@@ -48,4 +49,5 @@ header {
   opacity: 1;
   text-decoration: underline;
 }
+
 
