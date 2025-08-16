@@ -366,21 +366,23 @@ let lastScroll = 0;
 const header = document.getElementById("site-header");
 
 window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
+  let currentScroll = window.pageYOffset;
 
-  if (currentScroll > lastScroll) {
-    // scrolling down -> hide header
-    header.style.top = "-120px";  // move header up
+  if (currentScroll > lastScroll && currentScroll > 100) {
+    // Scrolling down → hide header
+    header.style.top = "-120px";
   } else {
-    // scrolling up -> show header
+    // Scrolling up → show header
     header.style.top = "0";
   }
 
   lastScroll = currentScroll;
 });
 </script>
+
 </body>
 </html>
+
 
 
 
