@@ -6,8 +6,8 @@ header {
 }
 
 .logo img {
-  height: 70px;       /* fixes the height */
-  width: auto;        /* keeps aspect ratio */
+  max-height: 70px !important;       /* fixes the height */
+  width: auto !important;        /* keeps aspect ratio */
   max-width: 150px;   /* prevents it from being too wide */
   display: block;     /* removes unwanted gaps */
 }
@@ -44,6 +44,7 @@ header {
     margin: 0.5rem 0;
   }
 }
+
 
 
 
