@@ -4,36 +4,42 @@ header {
   z-index: 50;
   background: linear-gradient(90deg, var(--brand), var(--accent), var(--brand2));
   box-shadow: var(--shadow);
+  padding: 10px 0;
 }
 
-.nav {
+.header-content {
   display: flex;
+  flex-direction: column; /* stack logo and nav */
   align-items: center;
-  justify-content: space-between;
-  padding: .7rem 0;
+  text-align: center;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 8px; /* space between logo and nav */
 }
 
 .logo-img {
-  height: 40px;
+  height: 50px;
   width: auto;
-  border-radius: 6px; /* optional */
+  border-radius: 6px;
 }
 
 .logo-text {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: #fff;
 }
 
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
 .nav-links a {
   color: #fff;
-  margin-left: 1.5rem;
   font-weight: 700;
   opacity: 0.95;
 }
