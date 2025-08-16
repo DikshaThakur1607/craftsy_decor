@@ -1,8 +1,23 @@
-.logo img {
-  height: 50px;
-  width: auto;
-  display: block;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  color: #fff;
 }
+
+.logo-img {
+  height: 45px;   /* adjust size */
+  width: auto;
+  border-radius: 8px; /* optional rounded corners */
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -18,3 +33,4 @@
   font-weight: bold;
   color: #fff;
 }
+
