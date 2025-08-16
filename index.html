@@ -5,31 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Craftsy Decor — One Page Site</title>
 <meta name="description" content="Eco-friendly handicrafts made from waste by differently-abled artisans in partnership with NGOs." />
-<style>
-  :root{
-    --bg:#fffdf8; --text:#2b231b; --muted:#6c5b4c;
-    --brand:#e4572e; --brand2:#8cc63f; --accent:#f1a208;
-    --card:#ffffff; --shadow:0 10px 25px rgba(0,0,0,.08);
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;scroll-behavior:smooth}
-  a{color:var(--brand);text-decoration:none}
-  .container{width:min(1100px,92%);margin-inline:auto}
-  /* Header / Nav */
-  header{position:sticky;top:0;z-index:50;background:linear-gradient(90deg,var(--brand),var(--accent),var(--brand2));box-shadow:var(--shadow)}
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:.7rem 0}
-  .brand{display:flex;align-items:center;gap:.6rem;color:#fff;font-weight:800;letter-spacing:.2px}
-  .brand-badge{width:38px;height:38px;border-radius:10px;background:#fff;color:#2b231b;display:grid;place-items:center;font-weight:900;box-shadow:0 4px 12px rgba(0,0,0,.2)}
-  nav a{color:#fff;margin-left:1rem;font-weight:700;opacity:.95}
-  nav a:hover{opacity:1;text-decoration:underline}
-  .btn-primary,.btn-secondary,.btn-ghost{
-    display:inline-block;padding:.8rem 1.1rem;border-radius:999px;font-weight:800;box-shadow:var(--shadow)
-  }
-  .btn-primary{background:#fff;color:#2b231b}
-  .btn-secondary{background:var(--brand2);color:#111}
-  .btn-ghost{background:transparent;color:#fff;border:2px solid #fff}
-  .center{text-align:center}
-
+  <style>
+    .logo img {
+      height: 50px;
+      width: auto;
+      display: block;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+    }
+  </style>
   /* Hero */
   .hero{padding:2.2rem 0;background:
     radial-gradient(1200px 600px at 100% -10%, #fff3, transparent 60%);}
@@ -90,23 +87,20 @@
 
 <!-- Sticky Nav -->
 <header>
-  <div class="container nav">
-    <a class="brand" href="#home">
-      <span class="brand-badge">CD</span>
-      <span>Craftsy Decor</span>
-    </a>
-    <nav>
-    <a href="#top">
-        <img src="logo.jpg" alt="Craftsy Decor Logo" style="height:50px; vertical-align:middle; border-radius:8px;">
-    </a>
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
-    </nav>
-  </div>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo.jpg" alt="Craftsy Decor" style="height:50px; width:auto;">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
-
 <!-- HOME -->
 <section id="home" class="hero">
   <div class="container hero-inner">
@@ -365,4 +359,5 @@
 </script>
 </body>
 </html>
+
 
