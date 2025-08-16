@@ -29,3 +29,20 @@
   color: #fff;        /* adjust as needed */
 }
 
+/* Make header fixed at top */
+#site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, orange, yellowgreen);
+  transition: top 0.4s;
+  z-index: 1000;
+}
+
+/* Push content down so it’s not hidden under header */
+body {
+  padding-top: 120px;  /* adjust to header height */
+}
+
+
