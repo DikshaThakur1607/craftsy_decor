@@ -49,4 +49,44 @@ body {
   padding-top: 120px; /* equal or bigger than header height */
 }
 
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: linear-gradient(90deg, var(--brand), var(--accent), var(--brand2));
+  box-shadow: var(--shadow);
+}
+
+/* Top row (logo) */
+.header-top {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  max-width: 120px; /* smaller size */
+  height: auto;
+}
+
+/* Bottom row (navigation) */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.6rem 0;
+}
+
+.nav a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+
+
 
