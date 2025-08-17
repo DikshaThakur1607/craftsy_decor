@@ -1,14 +1,35 @@
-/* Logo Styling */
-.logo img {
-  max-height: 80px;   /* reduce logo size */
-  width: auto;        /* keep proportions */
-  display: block;
-  margin: 0 auto;     /* center */
+/* ---------------- Header ---------------- */
+#site-header {
+  position: fixed;              /* stays at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, orange, yellowgreen);
+  transition: top 0.3s ease-in-out;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;       /* stack logo & nav vertically */
+  align-items: center;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Navbar Styling */
+/* prevent content hiding under fixed header */
+body {
+  margin: 0;
+  padding-top: 120px;  /* adjust depending on header height */
+}
+
+/* ---------------- Logo ---------------- */
+.logo {
+  max-height: 80px;    /* logo size */
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---------------- Navigation ---------------- */
 .navbar {
-  text-align: center;
   margin-top: 10px;
 }
 
@@ -16,77 +37,23 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;  /* spacing between links */
 }
 
 .navbar li {
   display: inline-block;
-  margin: 0 15px;
 }
 
 .navbar a {
   text-decoration: none;
   font-weight: bold;
-  color: #fff;        /* adjust as needed */
-}
-
-#site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(to right, orange, yellowgreen);
-  transition: top 0.3s ease-in-out;
-  z-index: 9999;
-  height: 100px; /* adjust if your logo is smaller */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* prevent content from hiding under header */
-body {
-  margin: 0;
-  padding-top: 120px; /* equal or bigger than header height */
-}
-
-/* Header */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: linear-gradient(90deg, var(--brand), var(--accent), var(--brand2));
-  box-shadow: var(--shadow);
-}
-
-/* Top row (logo) */
-.header-top {
-  text-align: center;
-  padding: 0.5rem 0;
-}
-
-.logo {
-  max-width: 120px; /* smaller size */
-  height: auto;
-}
-
-/* Bottom row (navigation) */
-.nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 0.6rem 0;
-}
-
-.nav a {
   color: #fff;
-  font-weight: 700;
-  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.nav a:hover {
-  text-decoration: underline;
+.navbar a:hover {
+  color: #000;  /* or darker shade for hover */
 }
-
-
-
 
