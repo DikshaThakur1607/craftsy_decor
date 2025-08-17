@@ -125,6 +125,56 @@ body {
     display: block; /* show when active */
   }
 }
+/* Header top layout */
+.header-top {
+  display: flex;
+  justify-content: space-between; /* logo left, button right */
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+/* Logo */
+.logo img {
+  max-height: 60px;
+  width: auto;
+}
+
+/* Hamburger button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  .navbar {
+    display: none; /* hidden by default */
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, orange, yellowgreen);
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .navbar.active {
+    display: block; /* show when menu is active */
+  }
+}
+
+
 
 
 
