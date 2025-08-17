@@ -92,6 +92,41 @@ body {
     padding: 0.3rem 0;
   }
 }
+/* Hide menu toggle on desktop */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* On mobile: show button, hide nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    display: none; /* hidden by default */
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .navbar.active {
+    display: block; /* show when active */
+  }
+}
+
+
 
 
 
