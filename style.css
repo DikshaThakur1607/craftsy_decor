@@ -56,4 +56,12 @@ body {
 .navbar a:hover {
   color: #000;  /* or darker shade for hover */
 }
+/* ---------------- Logo ---------------- */
+.logo img {
+  max-height: 80px;   /* reduce logo size */
+  width: auto;        /* keep proportions */
+  display: block;
+  margin: 0 auto;     /* center the logo */
+}
+
 
