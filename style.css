@@ -229,6 +229,40 @@ body {
     display: block; /* show when menu is active */
   }
 }
+/* Fix hamburger alignment */
+.menu-toggle {
+  position: absolute;
+  left: 15px;
+  top: 50%;                  /* Align vertically */
+  transform: translateY(-50%); /* Perfect vertical centering */
+  display: none;             /* Hidden on desktop */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;            /* Avoid shifting */
+  padding: 0;
+}
+
+/* Make sure header-top has consistent height */
+.header-top {
+  display: flex;
+  justify-content: center;    /* Logo centered */
+  align-items: center;        /* Everything aligned vertically */
+  position: relative;
+  width: 100%;
+  height: 80px;               /* Ensure uniform header height */
+  padding: 0 1rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;          /* Show hamburger only on mobile */
+  }
+}
+
 
 
 
