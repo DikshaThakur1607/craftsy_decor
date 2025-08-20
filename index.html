@@ -37,14 +37,15 @@
   </header>
   
 <!-- Hero Section -->
- <section id="hero">
+<!-- HERO SECTION -->
+<section id="hero">
   <div class="hero-content">
     <h1>Turning Waste into Wonder</h1>
     <p>
       Eco-friendly handicrafts crafted by differently-abled artisans in partnership with NGOs.
       Every purchase fuels dignity, skill, and sustainability.
     </p>
-    <button onclick="window.location.href='#products'" class="explore-btn">
+    <button class="explore-btn" onclick="document.querySelector('#products').scrollIntoView({ behavior: 'smooth' })">
       Explore Products
     </button>
   </div>
@@ -53,35 +54,30 @@
     <img src="eco-friendly-handicrafts.jpg" alt="Eco-friendly Handicrafts">
   </div>
 </section>
-  
-<!-- Explore Button -->
-<button class="explore-btn" onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' })">
-  Explore Products
-</button>
 
-<!-- Products Section -->
-<section id="products" class="products-section">
+<!-- PRODUCTS SECTION -->
+<section id="products">
   <h2>Our Eco-Friendly Products</h2>
-  <div class="products-grid">
+  <div class="product-list">
     <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1585386959984-a4155223f3f4?auto=format&fit=crop&w=400&q=80" alt="Handwoven Basket">
+      <img src="handwoven-basket.jpg" alt="Handwoven Basket">
       <h3>Handwoven Basket</h3>
       <p>Perfect for home décor and storage, crafted from natural bamboo.</p>
-      <button class="buy-btn">View Details</button>
+      <button class="view-btn">View Details</button>
     </div>
 
     <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1629991051733-e7b1c8932e07?auto=format&fit=crop&w=400&q=80" alt="Eco-Friendly Wall Décor">
+      <img src="eco-wall-decor.jpg" alt="Eco-Friendly Wall Décor">
       <h3>Eco-Friendly Wall Décor</h3>
       <p>Handmade by differently-abled artisans using upcycled materials.</p>
-      <button class="buy-btn">View Details</button>
+      <button class="view-btn">View Details</button>
     </div>
 
     <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1615639777595-91ec6c30d62c?auto=format&fit=crop&w=400&q=80" alt="Jute Tote Bag">
+      <img src="jute-tote.jpg" alt="Jute Tote Bag">
       <h3>Jute Tote Bag</h3>
       <p>Durable and stylish tote bag made from 100% eco-friendly jute.</p>
-      <button class="buy-btn">View Details</button>
+      <button class="view-btn">View Details</button>
     </div>
   </div>
 </section>
@@ -116,6 +112,7 @@
 
 </body>
 </html>
+
 
 
 
