@@ -505,6 +505,24 @@ footer {
   display: inline-block;
   margin-top: 20px;
 }
+/* Left align the hero heading and paragraph */
+h1 {
+  text-align: left !important;
+  margin-left: 80px;  /* Adjust as needed */
+}
+
+h1 + p {
+  text-align: left !important;
+  margin-left: 80px;  /* Align paragraph under heading */
+  max-width: 600px;   /* Keep text readable */
+}
+
+button[onclick*="Explore Products"] {
+  display: block;
+  margin-left: 80px;  /* Align button with heading */
+  margin-top: 20px;
+}
+
 
 
 
