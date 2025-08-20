@@ -37,16 +37,19 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Turning Waste into Wonder</h1>
-      <p>Eco-friendly handicrafts crafted by differently-abled artisans in partnership with NGOs. Every purchase fuels dignity, skill, and sustainability.</p>
-      <button onclick="window.location.href='#products'">Explore Products</button>
-    </div>
-    <div class="hero-image">
-      <img src="handicraft.jpg" alt="Eco-friendly Handicrafts" style="max-width: 350px; border-radius: 15px;">
-    </div>
-  </section>
+ <section class="hero-section">
+  <div class="hero-text">
+    <h1>Turning Waste into Wonder</h1>
+    <p>Eco-friendly handicrafts crafted by differently-abled artisans in partnership with NGOs. Every purchase fuels dignity, skill, and sustainability.</p>
+    <button class="explore-btn" onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' })">
+      Explore Products
+    </button>
+  </div>
+
+  <div class="hero-image">
+    <img src="your-image.png" alt="Eco-friendly Handicrafts">
+  </div>
+</section>
   
 <!-- Explore Button -->
 <button class="explore-btn" onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' })">
@@ -110,6 +113,7 @@
 
 </body>
 </html>
+
 
 
 
