@@ -832,6 +832,25 @@ button[onclick*="Explore Products"] {
   background-color: #3a9e42;
   transform: scale(1.05);
 }
+/* ---------------- HERO SECTION ---------------- */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background-color: #f8fff8;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 550px;
+  text-align: left; /* Aligns title to LEFT */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+ 
+
 
 
 
