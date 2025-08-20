@@ -833,11 +833,12 @@ button[onclick*="Explore Products"] {
   transform: scale(1.05);
 }
 /* ---------------- HERO SECTION ---------------- */
+/* Hero Section Styling */
 #hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 10%;
+  padding: 120px 10% 80px 10%; /* top | right | bottom | left */
   background-color: #f8fff8;
 }
 
@@ -850,6 +851,16 @@ button[onclick*="Explore Products"] {
 .hero-content h1 {
   font-size: 3rem;
  
+/* Hero Section Styling */
+#hero {
+  padding-top: 120px;  /* Creates space between navbar and heading */
+  padding-bottom: 80px; /* Keeps bottom spacing balanced */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8fff8;
+}
+
 
 
 
