@@ -618,6 +618,91 @@ button[onclick*="Explore Products"] {
   background-color: #3e855c;
   transform: translateY(-2px);
 }
+/* Hero Section Styling */
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background: linear-gradient(120deg, #f4ffe8, #e2f8dc);
+  text-align: left;
+  gap: 40px;
+}
+
+/* Left content */
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  color: #1f5f3a;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* Explore Products Button */
+.explore-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 14px 35px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #3a9e42;
+  transform: scale(1.05);
+}
+
+/* Right image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    margin-top: 25px;
+  }
+}
+
 
 
 
