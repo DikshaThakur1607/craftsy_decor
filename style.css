@@ -522,6 +522,16 @@ button[onclick*="Explore Products"] {
   margin-left: 80px;  /* Align button with heading */
   margin-top: 20px;
 }
+/* Force align hero section to the left */
+.hero-content,
+.hero-content h1,
+.hero-content p,
+.hero-content button {
+    text-align: left !important;
+    margin-left: 40px !important; /* adjust spacing if needed */
+    justify-content: flex-start !important;
+}
+
 
 
 
