@@ -14,14 +14,17 @@
 
   <!-- Header -->
  <header id="site-header">
-  <!-- Left Logo -->
   <div class="logo">
     <img src="logo.jpg" alt="Craftsy Decor Logo">
   </div>
 
-  <!-- Center Title -->
-  <div class="site-title">
-    Craftsy Decor
+  <h1 class="site-title">Craftsy Decor</h1>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
 
   <!-- Navigation Menu -->
@@ -110,15 +113,15 @@
   </footer>
 
   <!-- JavaScript for Hamburger Menu -->
-  <script>
+ <script>
   const hamburger = document.querySelector('.hamburger');
   const navbar = document.querySelector('.navbar');
 
   hamburger.addEventListener('click', () => {
     navbar.classList.toggle('active');
-    hamburger.classList.toggle('open');
   });
 </script>
 </body>
 </html>
+
 
