@@ -34,20 +34,23 @@ body {
 }
 
 /* Site Title */
+/* Craftsy Decor Title */
 .site-title {
+  font-size: 22px; /* Increased font size */
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  cursor: pointer;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  transition: color 0.3s ease;
+  white-space: nowrap; /* Prevents text breaking */
+  transition: font-size 0.3s ease, color 0.3s ease;
 }
 
 .site-title:hover {
-  color: #d0ffd6;
+  color: #d0ffd6; /* Same hover effect as nav links */
 }
 
 /* Navbar */
@@ -378,5 +381,6 @@ footer {
     gap: 15px;
   }
 }
+
 
 
