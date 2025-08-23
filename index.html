@@ -111,10 +111,14 @@
 
   <!-- JavaScript for Hamburger Menu -->
   <script>
-    function toggleMenu() {
-      document.querySelector('.navbar').classList.toggle('active');
-    }
-  </script>
+  const hamburger = document.querySelector('.hamburger');
+  const navbar = document.querySelector('.navbar');
 
+  hamburger.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
+
