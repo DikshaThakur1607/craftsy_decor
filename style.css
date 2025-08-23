@@ -923,6 +923,60 @@ button[onclick*="Explore Products"] {
 .navbar ul li a:hover {
   color: #d0ffd6;
 }
+/* Header container */
+#site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10%;
+  background: linear-gradient(to right, #f7b733, #4caf50);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Site Title */
+.site-title {
+  font-size: 16px;                /* Match nav link size */
+  font-weight: 600;               /* Match boldness */
+  color: #fff;                    /* Same white color */
+  text-transform: capitalize;     /* Matches style */
+  letter-spacing: 0.5px;          /* Matches nav spacing */
+  cursor: pointer;
+  position: absolute;             /* Keep it in the true center */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Navbar */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.site-title:hover {
+  color: #d0ffd6; /* Same hover effect */
+}
+
 
 
 
