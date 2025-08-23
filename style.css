@@ -324,4 +324,59 @@ footer {
     z-index: 1000;
   }
 }
+/* Hamburger Icon Styling */
+.hamburger {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2000; /* ensure it's above everything */
+}
+
+.hamburger div {
+  width: 28px;
+  height: 3px;
+  background-color: #fff; /* white to make it visible */
+  margin: 5px 0;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Show hamburger only on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* make it visible */
+  }
+
+  /* Hide nav menu by default on mobile */
+  .navbar {
+    display: none;
+  }
+
+  /* When menu is active */
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #ffb347, #6dbd63);
+    padding: 15px 0;
+    gap: 20px;
+    text-align: center;
+    z-index: 1500;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 
